@@ -1,0 +1,53 @@
+<table class="table thead-dark col-md-3 col-lg-2 col-sm-6">
+  <thead  >
+    <tr >
+      <th >
+        Icono
+      </th>
+      <th>
+        Nombre
+      </th>
+      <th>
+        Apellido Paterno
+      </th>
+      <th>
+        Apellido Materno
+      </th>
+      <th>
+        EDAD
+      </th>
+      <th>
+        SEXO
+      </th>
+      <th>Correo</th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let item of persona">
+
+    <tr>
+      <td>
+        <i class="fa "[ngClass]="{' fa-heart': item.icono==1,' fa-binoculars':item.icono==2,' fa-wifi':item.icono==3,' fa-ils': item.icono==4,' fa-tty':item.icono==5,' fa-plug':item.icono==6,' fa-camera':item.icono==7,' fa-cloud': item.icono==8,' fa-bus':item.icono==9,' fa-circle':item.icono==10}"></i>
+      </td>
+      <td>
+        {{item.Nombre}}
+      </td>
+      <td>
+       {{item.Apellidop}}
+      </td>
+      <td>
+        {{item.Apellidom}}
+      </td>
+      <td>
+        {{item.sexo}}
+      </td>
+      <td>
+        {{item.Edad}}
+      </td>
+      <td>
+        {{item.Correo}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ 

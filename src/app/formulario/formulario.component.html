@@ -1,0 +1,71 @@
+
+
+  <div class="form-group">
+      <label for="nombre" class="col-md-3 col-lg-2 col-sm-6">Nombre</label>
+      <input type="text" class="col-lg-3 col-md-6 col-sm-6" id="nombre" placeholder="Juan "   [(ngModel)]="Nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="APEP" class="col-md-3 col-lg-2 col-sm-6">Apellido Paterno</label>
+        <input type="text" class="col-lg-3 col-md-6 col-sm-6" id="APEP" placeholder="Garcia"   [(ngModel)]="Apellidop">
+      </div>
+      <div class="form-group">
+          <label for="APEM" class="col-md-3 col-lg-2 col-sm-6">Apellido Materno</label>
+          <input type="text" class="col-lg-3 col-md-6 col-sm-6" id="APEM" placeholder="López"   [(ngModel)]="Apellidom">
+        </div>
+        <div class="form-group">
+            <label for="EDAD" class="col-md-3 col-lg-2 col-sm-6">Edad</label>
+            <input type="text" class="col-lg-3 col-md-6 col-sm-6" id="EDAD" placeholder="Años"  [(ngModel)]="Edad">
+          </div>
+          
+        <label for="APEM" class="col-md-3 col-lg-2 col-sm-6">Sexo</label>
+        <select class="col-lg-3 col-md-6 col-sm-6" [(ngModel)]="sexo">
+            
+            <option value='Masculino'>Masculino</option >
+            <option value= 'Femenino'>Femenino</option>
+            
+          </select>
+      <div class="form-group">
+           <label for="email"class="col-md-3 col-lg-2 col-sm-6">Email address</label>
+          <input type="email" class="col-lg-3 col-md-6 col-sm-6" id="email" placeholder="name@example.com"  [(ngModel)]="Correo">
+      </div>
+      <div>
+        <button type="button" class="btn btn-info col-md-3 col-lg-2 col-sm-6" (click)="aggpersona()" >Guardar</button> 
+       <br>
+       <br>
+        <input type="reset"   class="btn btn-info col-md-3 col-lg-2 col-sm-6" (click)="borrar()"  value="Borrar ">
+      </div>
+      <br>
+      <div class="containers">
+        <div class="row">
+          <div class="col-ms-2"><i class="fa fa-heart " style="font-size: 30pt"></i> </div>
+          <div class="col-ms-2"> <i class="fa fa-binoculars"  style="font-size: 30pt"></i>  </div>
+          <div class="col-ms-2"><i class="fa fa-wifi" style="font-size: 30pt"></i></div>
+          <div class="col-ms-2"> <i class="fa fa-ils" style="font-size: 30pt"></i>   </div>
+          <div class="col-ms-2"> <i class="fa fa-tty"style="font-size: 30pt"></i></div>
+          <div class="col-ms-2"><i class="fa fa-plug"style="font-size: 30pt"></i></div>
+          <div class="col-ms-2">  <i class="fa fa-camera"style="font-size: 30pt"></i></div>
+          <div class="col-ms-2"><i class="fa fa-cloud"style="font-size: 30pt"></i>    </div>
+          <div class="col-ms-2"><i class="fa fa-bus"style="font-size: 30pt"></i></div>
+          <div class="col-ms-2"><i class="fa fa-circle"style="font-size: 30pt"></i></div>
+         <div>
+
+           
+          
+             
+      {{persona}}
+         
+          
+           
+        
+          
+          
+        </div>
+        </div>          
+       </div>     
+        
+    
+    
+      
+      
+    
